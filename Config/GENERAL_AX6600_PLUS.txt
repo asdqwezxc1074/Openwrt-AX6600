@@ -58,12 +58,12 @@ CONFIG_PACKAGE_geoview=y
 #CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus=y
 
 # OpenClash
-CONFIG_PACKAGE_luci-app-openclash=y
-CONFIG_PACKAGE_luci-compat=y
+CONFIG_PACKAGE_luci-app-openclash=n
+CONFIG_PACKAGE_luci-compat=n
 # OpenClash 及 nftset 依赖 dnsmasq-full，显式声明避免上游默认值变化时被 defconfig 静默丢弃
-CONFIG_PACKAGE_dnsmasq-full=y
+CONFIG_PACKAGE_dnsmasq-full=n
 CONFIG_PACKAGE_dnsmasq=n
-CONFIG_PACKAGE_dnsmasq_full_nftset=y
+CONFIG_PACKAGE_dnsmasq_full_nftset=n
 CONFIG_PACKAGE_dnsmasq_full_ipset=n
 
 # AdGuard Home
@@ -80,7 +80,7 @@ CONFIG_PACKAGE_luci-app-ttyd=y
 # UPnP 自动端口转发（通用配置中为 n，此处覆盖，仅 PLUS 启用）
 CONFIG_PACKAGE_luci-app-upnp=y
 # 动态域名解析（服务商定义是独立子包，不加则界面服务商列表为空）
-CONFIG_PACKAGE_luci-app-ddns=y
+CONFIG_PACKAGE_luci-app-ddns=n
 CONFIG_PACKAGE_ddns-scripts-services=y
 CONFIG_PACKAGE_ddns-scripts-aliyun=y
 CONFIG_PACKAGE_ddns-scripts-dnspod=y
@@ -92,4 +92,4 @@ CONFIG_PACKAGE_kmod-usb-printer=y
 CONFIG_PACKAGE_p910nd=y
 CONFIG_PACKAGE_luci-app-p910nd=y
 # qmodem 5G模组拨号支持
-CONFIG_PACKAGE_luci-app-qmodem=y
+CONFIG_PACKAGE_luci-app-qmodem=n
