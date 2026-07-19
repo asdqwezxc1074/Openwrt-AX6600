@@ -92,4 +92,4 @@ CONFIG_PACKAGE_kmod-usb-printer=y
 CONFIG_PACKAGE_p910nd=y
 CONFIG_PACKAGE_luci-app-p910nd=y
 # qmodem 5G模组拨号支持
-CONFIG_PACKAGE_luci-app-qmodem=n
+CONFIG_PACKAGE_luci-app-qmodem=y
